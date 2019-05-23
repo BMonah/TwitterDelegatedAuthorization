@@ -62,7 +62,7 @@ def twitter_oauth():
     # the request token is in the session therefore we just retrieve it from the session
     access_token = get_access_token(session['request_token'], oauth_verifier)
 
-    # we now wanna create the users and store them in the database so that they don't have to login constantly
+    # we now wanna create the users and store them in the database so that they don't have to login always
     # we are gonna load the user by screen name
     user = User.load_from_db_by_screen_name(access_token['screen_name'])
     # if the screen_name doesn't exist we are gonna create the user
