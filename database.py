@@ -3,7 +3,6 @@ from psycopg2 import pool
 
 class Database:
     __connection_pool = None
-    # __prevents the user from accessing the connection_pool from a different class of the code
 
     @classmethod
     def initialise(cls, **kwargs):
