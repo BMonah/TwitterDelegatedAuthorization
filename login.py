@@ -2,7 +2,7 @@ from cleanUser import User
 from database import Database
 from twitterUtils import get_request_token, get_oauth_verifier, get_access_token
 
-""" Initialize your database here """
+""" <Initialize your database here> """
 
 user_email = input("Enter your email address: ")
 user = User.load_from_db_by_email(user_email)
